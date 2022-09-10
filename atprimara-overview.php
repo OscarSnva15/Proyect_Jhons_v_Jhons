@@ -8,9 +8,6 @@ require_once 'views/layout/sidebar.php';
 <!-- El script de la librería html2pdf para descargar documentos en formato PDF del DOM-->
 <script src="<?=base_url?>assets/js/html2pdf.bundle.min.js"></script>
 
-
-
-
 <!--  BEGIN CONTENT AREA  -->
 <div id="content" class="main-content">
     <div class="layout-px-spacing">
@@ -37,6 +34,9 @@ require_once 'views/layout/sidebar.php';
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="animated-underline-profile-tab" data-toggle="tab" href="#animated-underline-profile" role="tab" aria-controls="animated-underline-profile" aria-selected="false"><i class="fa-solid fa-eye"></i>Consultar Formato</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="animated-underline-profile-tab" data-toggle="tab" href="#animated-underline-profile" role="tab" aria-controls="animated-underline-profile" aria-selected="false"><i class="fa-solid fa-trash"></i>Dar de baja Formato</a>
                                 </li>
                             </ul>
 
@@ -1810,7 +1810,7 @@ require_once 'views/layout/sidebar.php';
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
                                                                         <div class="n-chk">
                                                                             <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="SI" id="atprimaria_perfilsalud_check27B" name="atprimaria_perfilsalud_check27">
+                                                                                <input type="radio" class="new-control-input" value="NO" id="atprimaria_perfilsalud_check27B" name="atprimaria_perfilsalud_check27">
                                                                                 <span class="new-control-indicator"></span>NO
                                                                             </label>
                                                                         </div>
@@ -2145,370 +2145,14 @@ require_once 'views/layout/sidebar.php';
                                                         </div>
                                                         <!-- Termina mi sexto y ultimo renglon de la seccion Ejercicio -->
                                                         
-                                                        <!-- Termina section de (HOJA 3, 4 DE WORD) -->
-
-                                                        <!-- COMIENZA LA SECCION DE JERCICIO (HOJA 3, 4 DE WORD)  -->
-                                                        <div class="row">
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-right border-left">
-                                                                Actividad Fisica <br> (Solo para ser contestado por el médico o personal de salud)
-                                                            </div>
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right">
-                                                                <!-- radios buttons -->
-                                                                <div class="row mt-2">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="SI" id="atprimaria_perfilsalud_check27A" name="atprimaria_perfilsalud_check27">
-                                                                                <span class="new-control-indicator"></span>SI
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="SI" id="atprimaria_perfilsalud_check27B" name="atprimaria_perfilsalud_check27">
-                                                                                <span class="new-control-indicator"></span>NO
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Termina los radio buttoms -->
-                                                            </div>
-                                                        </div>
-                                                        <!-- Termina mi primer renglon de la seccion ejercicio-->
-
-                                                        <!-- comienza mi segun renglon section ejercicio-->
-                                                        <div class="row">
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right border-left">
-                                                                22. La actividad moderada implica ejercitarse lo suficiente como para elevar el ritmo cardiaco y comenzar a sudar. Una forma de determinar si se ha alcanzado este nivel es ser capaz de hablar, pero no de cantar la letra de su canción favorita. Durante los últimos 30 días ¿Cuántos días a la semana solía realizar algún tipo de actividad física moderada?
-                                                            </div>
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right">
-                                                                Los días que realizo actividad física moderada ¿Cuántos minutos dedico normalmente a esa actividad? Solo cuente periodos de actividad moderada de 10 minutos o más. Súmelos para poder obtener un total de minutos de actividad física por día. Por ejemplo: tres periodos en 10 minutos de actividad física moderada cuentan cómo un total de 30 minutos.
-                                                            </div>
-                                                        </div>
-                                                        <!-- termina mi segundo renglon section ejercicio-->
-
-                                                        <!-- Comienza mi tercer renglon section ejercicio-->
-                                                        <div class="row">
-                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 border-top border-right border-left">
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border-bottom">
-                                                                        Ejemplos:
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                                                        <ol>
-                                                                            <li>
-                                                                                Caminar rápido
-                                                                            </li>
-                                                                            <li>
-                                                                                Practicar aerobic acuático
-                                                                            </li>
-                                                                            <li>
-                                                                                Montar en bicicleta en terreno llano o con pocas cuestas
-                                                                            </li>
-                                                                            <li>
-                                                                                Jugar al tenis en modalidad de dobles
-                                                                            </li>
-                                                                            <li>
-                                                                                Empujar un corta césped
-                                                                            </li>
-                                                                        </ol>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 border-top border-right">
-                                                                <!-- Comienzan radio bottoms sobre dias selection de la pregunta 22  -->
-                                                                <div class="row mt-2">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="0 días por semana" id="atprimaria_perfilsalud_check28A" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>0 días por semana
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="1 dia" id="atprimaria_perfilsalud_check28B" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>1 dia
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="2 días" id="atprimaria_perfilsalud_check28C" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>2 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="3 días" id="atprimaria_perfilsalud_check28D" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>3 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="4 días" id="atprimaria_perfilsalud_check28E" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>4 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="5 días" id="atprimaria_perfilsalud_check28F" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>5 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="6 días" id="atprimaria_perfilsalud_check28G" name="atprimaria_perfilsalud_check28">
-                                                                                <span class="new-control-indicator"></span>6 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Terminan radios buttoms  sobre dias selection de la pregunta 22-->
-                                                            </div>
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right">
-                                                                <!-- Comienzan mis radios sobre minutos selection de la pregunta 22 -->
-                                                                <div class="row mt-2">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Menos de 10 minutos" id="atprimaria_perfilsalud_check29A" name="atprimaria_perfilsalud_check29">
-                                                                                <span class="new-control-indicator"></span>Menos de 10 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 10 y 19 minutos" id="atprimaria_perfilsalud_check29B" name="atprimaria_perfilsalud_check29">
-                                                                                <span class="new-control-indicator"></span>Entre 10 y 19 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 20 y 29 minutos" id="atprimaria_perfilsalud_check29C" name="atprimaria_perfilsalud_check29">
-                                                                                <span class="new-control-indicator"></span>Entre 20 y 29 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 30 y 44 minutos" id="atprimaria_perfilsalud_check29D" name="atprimaria_perfilsalud_check29">
-                                                                                <span class="new-control-indicator"></span>Entre 30 y 44 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 45 y 60 minutos" id="atprimaria_perfilsalud_check29E" name="atprimaria_perfilsalud_check29">
-                                                                                <span class="new-control-indicator"></span>Entre 45 y 60 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Mas de una hora" id="atprimaria_perfilsalud_check29F" name="atprimaria_perfilsalud_check29">
-                                                                                <span class="new-control-indicator"></span>Mas de una hora
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Terminan mis radios sobre minutos selection -->
-                                                            </div>
-                                                        </div>
-                                                        <!-- Termina mi tercer renglon section ejecrcicio-->
-
-                                                        <!-- comienza mi cuarto renglon section ejercicio-->
-                                                        <div class="row">
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right border-left"> <br> </div>
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right"> <br> </div>
-                                                        </div>
-                                                        <!-- Termina mi cuarto renglon section ejercicio-->
-
-                                                        <!-- comienza mi quinto renglon -->
-                                                        <div class="row">
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right border-left">
-                                                                23. La actividad intensa o vigorosa implica una respiración rápida y dificultosa, así como una elevación considerable del ritmo cardiaco. Al ejercitarse a este nivel, solo será capaz de decir unas pocas palabras sin hacer una pausa para respirar. Por lo general ¿Cuántos días a la semana realizo actividad física intensa durante los últimos tres meses?
-                                                            </div>
-                                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border-top border-right">
-                                                                Los días que realizo actividad intensa o vigorosa. ¿Cuántos minutos dedico normalmente a esta actividad? Solo cuente periodos de actividad intensa o vigorosa de 10 minutos o más. Súmelos para obtener un total de minutos de actividad física por día.
-                                                            </div>
-                                                        </div>
-                                                        <!-- termina mi quinto renglon -->
-
-                                                        <!-- Comienza mi sexto y ultimo renglon de la seccion Ejercicio -->
-                                                        <div class="row">
-                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 border-left border-right border-top border-bottom">
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border-bottom">
-                                                                        Ejemplos:
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                                                        <ol>
-                                                                            <li>Correr</li>
-                                                                            <li>Nadar</li>
-                                                                            <li>Montar en bicicleta a gran velocidad o en terreno a cuestas</li>
-                                                                            <li>Jugar baloncesto </li>
-                                                                        </ol>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 border-right border-top border-bottom">
-                                                                <!-- Comienzan los correspondientes radio buttoms de la pregunta 23   -->
-                                                                <div class="row mt-2">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="0 días por semana" id="atprimaria_perfilsalud_check30A" name="atprimaria_perfilsalud_check30">
-                                                                                <span class="new-control-indicator"></span>0 días por semana
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="1 dia" id="atprimaria_perfilsalud_check30B" name="atprimaria_perfilsalud_check30">
-                                                                                <span class="new-control-indicator"></span>1 dia
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="2 días" id="atprimaria_perfilsalud_check30C" name="atprimaria_perfilsalud_check30">
-                                                                                <span class="new-control-indicator"></span>2 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="3 días" id="atprimaria_perfilsalud_check30D" name="atprimaria_perfilsalud_check30">
-                                                                                <span class="new-control-indicator"></span>3 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="4 días" id="atprimaria_perfilsalud_check30E" name="atprimaria_perfilsalud_check30">
-                                                                                <span class="new-control-indicator"></span>4 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="5 días" id="atprimaria_perfilsalud_check30F" name="atprimaria_perfilsalud_check30">
-                                                                                <span class="new-control-indicator"></span>5 días
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Terminan los correspondientes radio buttoms de la pregunta 23 -->
-                                                            </div>
-                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 border-right border-top border-bottom">
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border-bottom">
-                                                                        Ejemplos:
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                                                        <ol>
-                                                                            <li>
-                                                                                Dos periodos de 10 minutos de actividad física intensa o vigorosa cuentan como 20 minutos
-                                                                            </li>
-                                                                        </ol>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 border-right border-top border-bottom">
-                                                                <!-- comienzan radio buttom sobre minutos de la pregunta 25 -->
-                                                                <div class="row mt-2">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Menos de 10 minutos" id="atprimaria_perfilsalud_check31A" name="atprimaria_perfilsalud_check31">
-                                                                                <span class="new-control-indicator"></span>Menos de 10 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 10 y 19 minutos" id="atprimaria_perfilsalud_check31B" name="atprimaria_perfilsalud_check31">
-                                                                                <span class="new-control-indicator"></span>Entre 10 y 19 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 20 y 29 minutos" id="atprimaria_perfilsalud_check31C" name="atprimaria_perfilsalud_check31">
-                                                                                <span class="new-control-indicator"></span>Entre 20 y 29 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 30 y 44 minutos" id="atprimaria_perfilsalud_check31D" name="atprimaria_perfilsalud_check31">
-                                                                                <span class="new-control-indicator"></span>Entre 30 y 44 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Entre 45 y 60 minutos" id="atprimaria_perfilsalud_check31E" name="atprimaria_perfilsalud_check31">
-                                                                                <span class="new-control-indicator"></span>Entre 45 y 60 minutos
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-5">
-                                                                        <div class="n-chk">
-                                                                            <label class="new-control new-radio radio-info">
-                                                                                <input type="radio" class="new-control-input" value="Mas de una hora" id="atprimaria_perfilsalud_check31F" name="atprimaria_perfilsalud_check31">
-                                                                                <span class="new-control-indicator"></span>Mas de una hora
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Terminan radio butttoms sobre minutos de la pregunta 25k -->
-                                                            </div>
-                                                        </div>
                                                         <!-- Termina mi sexto y ultimo renglon de la seccion Ejercicio -->
                                                         <!-- TERMINA SECTION DE JERCICIO -->
 
-                                                        <!-- COMIENZA SECCION DE TABACO  -->
-                                                        <!-- Comienza renglon div invisible de separacion -->
-                                                        <div class="row">
-                                                            <div class="text-info mt-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">TABACO</div>
-                                                        </div>
+                                              
                                                         <!-- termina renglon div invisble de serparacion -->
-
+                                                        <div class="row mt-4">
+                                                            <div class="text-info col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">TABACO</div>
+                                                        </div>
                                                         <!-- Comienza renglons 1 de la seccion Tabaco -->
                                                         <div class="row">
                                                             <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6  border-top border-right border-left">
@@ -3025,8 +2669,8 @@ require_once 'views/layout/sidebar.php';
                                                                 <label><strong>Firma del asociado</strong></label>
                                                                 <br><span>Debe comenzar y terminar su firma dentro del recuadro sombreado</span>
                                                                 <div class="wrapper mt-4 d-flex justify-content-center">
-                                                                    <canvas id="signature_pad_atprimaria_firma1"></canvas>
-                                                                    <input type="hidden" id="signature_pad_atprimaria_firma_1" name="signature_pad_atprimaria_firma_1">
+                                                                    <canvas id="signature_pad_auditiva_form8_firma1"></canvas>
+                                                                    <input type="hidden" id="signature_pad_auditiva_form8_firma_1" name="signature_pad_auditiva_form8_firma_1">
                                                                 </div>
                                                                 <div class="clear-btn">
                                                                     <a onclick="clear_auditiva_form8_clean1()" class="btn btn-primary mt-3 text-white btn-sm float-right"><span>
@@ -3042,8 +2686,8 @@ require_once 'views/layout/sidebar.php';
                                                                 <label><strong>Firma departamento Médico</strong></label>
                                                                 <br><span>Debe comenzar y terminar su firma dentro del recuadro sombreado</span>
                                                                 <div class="wrapper mt-4 d-flex justify-content-center">
-                                                                    <canvas id="signature_pad_atprimaria_firma2"></canvas>
-                                                                    <input type="hidden" id="signature_pad_atprimaria_firma_2" name="signature_pad_atprimaria_firma_2">
+                                                                    <canvas id="signature_pad_auditiva_form8_firma2"></canvas>
+                                                                    <input type="hidden" id="signature_pad_auditiva_form8_firma_2" name="signature_pad_auditiva_form8_firma_2">
                                                                 </div>
                                                                 <div class="clear-btn">
                                                                     <a onclick="clear_auditiva_form8_clean2()" class="btn btn-primary mt-3 text-white btn-sm float-right"><span>
@@ -3051,8 +2695,8 @@ require_once 'views/layout/sidebar.php';
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <!-- Termina div section de firmas -->
+                                                        
                                                         <!-- Termina secion de Jercicio -->
                                                     </div>
                                                 </tbody>
@@ -3060,23 +2704,23 @@ require_once 'views/layout/sidebar.php';
                                         </div>
                                         <!-- Boton para enviar los datos -->
                                         <div class="modal-footer mt-5">
-                                            <button class="btn btn-primary" type="submit">Guardar</button>
                                             <input type="reset"  class="btn btn-dark" value="Limpiar formulario">
+                                            <button type="submit" class="btn btn-primary" id="guardar_formato_atprimaria">Guardar</button>
+                                            <div class="spinner-border spinner-border-sm" id="load_atprimaria_formato" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="animated-underline-profile" role="tabpanel" aria-labelledby="animated-underline-profile-tab">
-                                    
-                                    
                                     <div class="row">
                                         <div class="col-md-5">
                                             <!-- Input de tipo select para cargar dinamicamente el formato de una baja de pvm correspondiente a un colaborador -->
                                             <select class="custom-select" id="input_seleccion_consulta_soap_pvm" style="cursor: pointer;">
-                                                <option value="0" selected>Ver formato de baja P.V.M.</option>
+                                                <option value="0" selected>Ver Formato Guardado de Atencion Primaria</option>
                                             </select>
                                         </div>
                                     </div>
-
                                     <div class="row float-right">
                                         <i id="descargar_soap" class="fa-solid fa-file-pdf fa-xl" style="cursor: pointer;"></i>
                                         <i id="load_soap_download_soap" class="mr-2 ml-2 fa-solid fa-circle-notch fa-spin fa-xl" style="color: #2196f3;"></i>
@@ -3084,25 +2728,12 @@ require_once 'views/layout/sidebar.php';
 
                                     <!-- Seccion en donde se imprimira el contenido del formato de SOAP delegado por el input  id="input_seleccion_consulta_soap_pvm"-->
                                     <div class="mt-5 mb-5" id="mostrar_documento_soap_pvm">
-                                        <h6>No ha seleccionado la consulta de ningún SOAP</h6>
+                                        <h6>No ha seleccionado la consulta de ningún Formato de atencion primaria</h6>
                                     </div>
-
                                 </div>
-                                <!-- <div class="tab-pane fade" id="animated-underline-contact" role="tabpanel" aria-labelledby="animated-underline-contact-tab">
-                                    <p class="dropcap  dc-outline-primary">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div> -->
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -3117,83 +2748,7 @@ require_once 'views/layout/sidebar.php';
     </div>
 </div>
 <!--  END CONTENT AREA  -->
+<!-- agregamos script correspondiente en el fichero components -->
+<script src="<?=base_url?>components/at_primaria/atencion_primaria.js"></script>
 
-<!-- Importamos el archivo de configuracion JS encargado de controlar y manejar la logica de operacion del modulo de formato de SOAP de Programas de Vigilancia Medica-->
-<script src="<//?=base_url?>components/at_primaria/atencion_primaria.js"></script> -->
-<!-- COMIENZA LA SECCION DE SCRIPT -->
-<script>
-
-const form = document.getElementById('atprimaria_perfilsalud_formato');
-    
-    form.addEventListener("submit", function(e){
-        e.preventDefault();
-
-        //Creamos el formdata
-        var data = new FormData(form);
-
-        //utilzamos el metodo fecth para comunicar con el backend ,es decir, enviar la info guardar_atencion_primaria
-        fetch(`${base_url}atprimaria/guardar_atencion_primaria`,{
-            method: 'POST',
-            body: data
-        })
-        .then(response => response.json())
-        .then(function(data){
-            if(data.code == 200){
-                console.table(data);
-                window.alert('Datos enviados exitosamente');
-            }
-            else{
-                window.alert('No se han enviado los datos');
-            }
-        })
-    });
-
-    $(function () {
-		window.signaturePad_auditiva_form8_firma1 = new SignaturePad($('#signature_pad_atprimaria_firma1').get(0), {});
-		window.signaturePad_auditiva_form8_firma2 = new SignaturePad($('#signature_pad_atprimaria_firma2').get(0), {});
-    });
-    
-    //limpoiador del area de firma empleado
-	var clear_auditiva_form8_clean1 = function () {
-		window.signaturePad_auditiva_form8_firma1.clear()
-	}
-
-    //limpoiador del area de firma supervisor
-    var clear_auditiva_form8_clean2 = function () {
-		window.signaturePad_auditiva_form8_firma2.clear()
-	}
-
-    //oupamos dos variables una para la firma de empleado y otra para firma de supervisor
-    var mycanvas_pvm_auditiva_form8_firma_1 = document.getElementById("signature_pad_auditiva_form8_firma1");
-    var mycanvas_pvm_auditiva_form8_firma_2 = document.getElementById("signature_pad_auditiva_form8_firma2");
-
-    //firma empleado (responsive ordenadores)
-	mycanvas_pvm_auditiva_form8_firma_1.addEventListener("click", function () {
-		var img_pvm_auditiva_form8_firma_1 = mycanvas_pvm_auditiva_form8_firma_1.toDataURL("image/png");
-		$("#signature_pad_auditiva_form8_firma_1").val(img_pvm_auditiva_form8_firma_1);
-		console.log(img_pvm_auditiva_form8_firma_1);
-	});
-
-    //firma supervisor (responsive ordenadores)
-    mycanvas_pvm_auditiva_form8_firma_2.addEventListener("click", function () {
-		var img_pvm_auditiva_form8_firma_2 = mycanvas_pvm_auditiva_form8_firma_2.toDataURL("image/png");
-		$("#signature_pad_auditiva_form8_firma_2").val(img_pvm_auditiva_form8_firma_2);
-		console.log(img_pvm_auditiva_form8_firma_2);
-	});
-
-	//firma empleado (responsive tabletas)
-    mycanvas_pvm_auditiva_form8_firma_1.addEventListener("touchend", function () {
-		var img_pvm_auditiva_form8_firma_1 = mycanvas_pvm_auditiva_form8_firma_1.toDataURL("image/png");
-		$("#signature_pad_auditiva_form8_firma_1").val(img_pvm_auditiva_form8_firma_1);
-		console.log(img_pvm_auditiva_form8_firma_1);
-	});
-
-    //firma supervisor (responsive tabletas)
-    mycanvas_pvm_auditiva_form8_firma_2.addEventListener("touchend", function () {
-		var img_pvm_auditiva_form8_firma_2 = mycanvas_pvm_auditiva_form8_firma_2.toDataURL("image/png");
-		$("#signature_pad_auditiva_form8_firma_2").val(img_pvm_auditiva_form8_firma_2);
-		console.log(img_pvm_auditiva_form8_firma_2);
-	});
-</script>
-<!-- COMIENZA LA SECCION DE SCRIPT -->
 <?php require_once 'views/layout/footer.php';?>

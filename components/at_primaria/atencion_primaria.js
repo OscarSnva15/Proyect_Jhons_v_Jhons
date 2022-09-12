@@ -1,5 +1,7 @@
 // Ocultar el loader del botom de guardar formato SOAP
 $("#load_atprimaria_formato").hide();
+// Ocultar loader de descargar formato SOAP
+$("#load2_atprimaria_formato").hide();
 
 const form = document.getElementById('atprimaria_perfilsalud_formato');
     
@@ -141,44 +143,41 @@ const form = document.getElementById('atprimaria_perfilsalud_formato');
 		$("#signature_pad_auditiva_form8_firma_2").val(img_pvm_auditiva_form8_firma_2);
 		console.log(img_pvm_auditiva_form8_firma_2);
 	});
+//**Section de script para la consulta de informacion del formato**/
 
-
-    // El siguiente Evento se hace cargo de precargar para consultar todos los formatos SOAP que ha llenado un colaborador por medio de un <select>, construye los elementos <option> del input <select> padre
-    document.addEventListener('DOMContentLoaded', function(event) {
-
-    let wwid = document.querySelector('#soap_pvm_wwid').value;
-
-    controller = `pdv/consultar_formatos_soap_colaborador`;
-
-    const requestOptions = {
+// Obtenemos el id del select en el documento html
+let formato_seleccionado = document.getElementById('input_seleccion_formato_atprimaria');
+//agregamos el evento de escucha al querer acceder a los elementos
+formato_seleccionado.addEventListener('click',function(event){
+    //script para traer de la bd, el wwid de los empleados que ya han llenado sus formularios.
+    let wwid = document.querySelector('#atprimaria_perfilsalud_wwid').value;
+    //script, peticion fetch utilizada como medio asincrono de comunicacion con el controlador.
+    fetch(`${base_url}atprimaria/consultar_atencion_primaria`,{
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id_colaborador: wwid })
-    };
-    fetch(base_url+controller, requestOptions)
-        .then(response => response.json())
-        .then(data => {
-            
-            if (data.data === 'SIN_DATOS') {
-                return false;
-            }
-
-            for (let i = 0; i < data.data.length; i++) {
-                let json_to_text = JSON.stringify(data.data[i]);
-                let value_pvm = JSON.parse(json_to_text);
-                let x = document.querySelector('#input_seleccion_consulta_soap_pvm');
-                // Dinamicamente por medio del id del pvm asignamos su titulo para mejor visualizacion
-                let titulo_pvm = seleccionar_titulo_pvm(data.data[i].pvm);
-                // Al elemento <option> recien creado le asignamos el valor de su atributo value
-                let option = new Option(titulo_pvm, value_pvm.id);
-                // Al elemento <option> recien creado le asignamos el valor de su atributo id
-                option.setAttribute("id",'soap_pvm_consulta_'+data.data[i].id);
-                // Añadimos el hijo <option> al <select> padre
-                x.appendChild(option);
-            }
-        })
-        .catch(error => {
-                element.parentElement.innerHTML = `Error en recuperar formatos SOAP para consulta: ${error}`;
-                console.error('There was an error!', error);
-        });
-    });
+        headers: {'Contend-Type': 'application/json' },
+        body: JSON.stringify({ id_colaborador: wwid})
+    })
+    .then(response => response.json())
+    .then(data =>{
+        if (data.data === 'SIN_DATOS') {
+            return false;
+        }
+        for(let i = 0; i<data.data.length; i++){
+            let json_to_text = JSON.stringify(data.data[i]);
+            let value_atprimaria = JSON.parse(json_to)
+            let x = document.querySelector('#input_seleccion_formato_atprimaria');
+            // Dinamicamente por medio del id del pvm asignamos su titulo para mejor visualizacion
+            let titulo_atprimaria = seleccionar_titulo_pvm(data.data[i].nombre);
+            // Al elemento <option> recien creado le asignamos el valor de su atributo value
+            let option = new Option(titulo_atprimaria, value_atprimaria.id);
+            // Al elemento <option> recien creado le asignamos el valor de su atributo id
+            option.setAttribute("id",'formulario_colaborador'+data.data[i].id);
+            // Añadimos el hijo <option> al <select> padre
+            x.appendChild(option);
+        }
+    })
+    .catch (error => {
+        element.parentElement.innerHTML = `Error en recuperar formatos para consulta: ${error}`;
+        console.error('There was an error!', error);
+    })
+});

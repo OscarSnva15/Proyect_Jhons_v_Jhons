@@ -147,7 +147,15 @@ require_once 'views/layout/sidebar.php';
                                                     <?php //Utils_Pvm::imprimir_fechas_inscripcion_vigilancias_medicas($fechas); ?>
                                                 </td>
                                                 <?php
-                                                    $action_controller = 'atprimaria_overview';
+                                                    if(isset($gestion) && $gestion){
+                                                        $action_controller = 'gestion_atprimaria';
+                                                    }else if(isset($alta) && $alta){
+                                                        $action_controller = 'alta_atprimaria';
+                                                    }else if(isset($baja) && $baja){
+                                                        $action_controller = 'baja_atprimaria';
+                                                    }else {
+                                                        $action_controller = 'programas_vigilancia_colaborador';
+                                                    }
                                                 ?>
                                                 <td class="text-center"> <a class="text-center" href="<?=base_url?>atprimaria/<?=$action_controller?>&id=<?=$colaborador['IDEmpleado']?>"> <i class="fa-solid fa-folder-open fa-2x"></i> </a></td>
                                             </tr>
